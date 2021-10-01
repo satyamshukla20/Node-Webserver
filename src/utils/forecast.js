@@ -19,7 +19,7 @@ request({url,json:true},(error,{body})=>{
      }
      else
      {
-        callback(undefined,'it is currently '+current.main.temp+' there is a chance of rain happening')
+        callback(undefined,'it is currently '+current.main.temp+' degrees celsius. It feels like'+current.main.feels_like+' degrees celsius.The maximum Temperature of the day is '+current.main.temp_max+' degrees and the minimum temperature of day is '+current.main.temp_min+' degrees.')
      }
 })
 }
